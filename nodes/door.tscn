@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://coc60yg36sak3"]
+
+[ext_resource type="Script" path="res://nodes/door.gd" id="1_yh4bv"]
+[ext_resource type="Texture2D" uid="uid://dxtvmf0e7pibe" path="res://images/sokoban_tilesheet.png" id="2_e87v6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w14nw"]
+atlas = ExtResource("2_e87v6")
+region = Rect2(640, 0, 64, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6guy8"]
+size = Vector2(62, 62)
+
+[node name="Door" type="Area2D"]
+script = ExtResource("1_yh4bv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(32, 32)
+texture = SubResource("AtlasTexture_w14nw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(32, 32)
+shape = SubResource("RectangleShape2D_6guy8")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

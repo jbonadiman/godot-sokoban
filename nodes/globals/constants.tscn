@@ -1,0 +1,18 @@
+[gd_scene load_steps=8 format=3 uid="uid://b0sl1058fjalh"]
+
+[ext_resource type="Script" path="res://nodes/globals/constants.gd" id="1_mpuqo"]
+[ext_resource type="PackedScene" uid="uid://bs87ewqsdnypx" path="res://nodes/screens/level_selection_screen.tscn" id="2_awugh"]
+[ext_resource type="PackedScene" uid="uid://ndcnvflifv1q" path="res://nodes/crate.tscn" id="2_cp7q3"]
+[ext_resource type="PackedScene" uid="uid://bskhq7xpbdiux" path="res://nodes/screens/play_screen.tscn" id="3_4b7e2"]
+[ext_resource type="PackedScene" uid="uid://coc60yg36sak3" path="res://nodes/door.tscn" id="3_q3cm2"]
+[ext_resource type="PackedScene" uid="uid://bdlr7aujwl7s2" path="res://nodes/dot.tscn" id="4_4pfwo"]
+[ext_resource type="PackedScene" uid="uid://tf5m7de608lc" path="res://nodes/player.tscn" id="5_epcrm"]
+
+[node name="Constants" type="Node"]
+script = ExtResource("1_mpuqo")
+crate_scene = ExtResource("2_cp7q3")
+door_scene = ExtResource("3_q3cm2")
+dot_scene = ExtResource("4_4pfwo")
+player_scene = ExtResource("5_epcrm")
+level_selection_scene = ExtResource("2_awugh")
+play_scene = ExtResource("3_4b7e2")
