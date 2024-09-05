@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bs87ewqsdnypx"]
+[gd_scene load_steps=4 format=3 uid="uid://bs87ewqsdnypx"]
 
 [ext_resource type="Script" path="res://nodes/screens/level_selection_screen.gd" id="1_g16sh"]
+[ext_resource type="Script" path="res://resources/levels/level.gd" id="2_4do16"]
 [ext_resource type="Resource" uid="uid://c25f0o1b00ktp" path="res://resources/levels/level_1.tres" id="2_vyt33"]
 
 [node name="LevelSelectionScreen" type="MarginContainer"]
@@ -10,7 +11,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_g16sh")
-levels = Array[Resource("res://resources/levels/level.gd")]([ExtResource("2_vyt33")])
+levels = Array[ExtResource("2_4do16")]([ExtResource("2_vyt33")])
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 2
